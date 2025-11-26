@@ -89,8 +89,8 @@
   cursor: pointer;
 }
 
-/* Visualization containers */
-.visualization-container {
+/* Visualisation containers */
+.visualisation-container {
   background: var(--surface-bg);
   border: var(--border-width-thin) solid var(--surface-border);
   border-radius: var(--border-radius-lg);
@@ -178,7 +178,7 @@
     font-size: var(--font-size-xl);
   }
 
-  .visualization-container {
+  .visualisation-container {
     padding: var(--space-md);
   }
 
@@ -188,7 +188,7 @@
 }
 
 @media (max-width: 480px) {
-  .visualization-container {
+  .visualisation-container {
     padding: var(--space-sm);
   }
 }
