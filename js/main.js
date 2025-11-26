@@ -304,6 +304,65 @@ async function initScatterChart() {
 }
 
 /**
+ * Initialize Interview Performance Chart
+ */
+async function initInterviewPerformanceChart() {
+  try {
+    const data = await fetchJSON('./data/interview-performance.json');
+    const ctx = document.getElementById('interviewPerformanceChart');
+
+    if (!ctx) return;
+
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+      options: {
+        ...chartDefaults,
+        plugins: {
+          ...chartDefaults.plugins,
+          title: {
+            display: true,
+            text: 'Interview Performance: AI-Enabled vs Traditional Training',
+            color: '#e88856',
+            font: {
+              size: 18,
+              weight: 'bold'
+            },
+            padding: 20
+          },
+          tooltip: {
+            ...chartDefaults.plugins.tooltip,
+            callbacks: {
+              label: function(context) {
+                return `${context.dataset.label}: ${context.parsed.y}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          ...chartDefaults.scales,
+          y: {
+            ...chartDefaults.scales.y,
+            min: 0,
+            max: 100,
+            ticks: {
+              ...chartDefaults.scales.y.ticks,
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          }
+        }
+      }
+    });
+
+    appState.setChart('interviewPerformanceChart', chart);
+  } catch (error) {
+    console.error('Error initializing interview performance chart:', error);
+  }
+}
+
+/**
  * Initialize all charts
  */
 async function initializeCharts() {
@@ -313,7 +372,8 @@ async function initializeCharts() {
     await Promise.all([
       initLineChart(),
       initBarChart(),
-      initScatterChart()
+      initScatterChart(),
+      initInterviewPerformanceChart()
     ]);
 
     appState.setState('chartsInitialized', true);

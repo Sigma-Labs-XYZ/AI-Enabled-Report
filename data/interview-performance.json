@@ -1,0 +1,23 @@
+{
+  "labels": [
+    "Technical Questioning Interview",
+    "Coding Problem Interview",
+    "Take Home Test"
+  ],
+  "datasets": [
+    {
+      "label": "AI-Enabled",
+      "data": [72, 77, 95],
+      "backgroundColor": "rgba(232, 136, 86, 0.8)",
+      "borderColor": "rgba(232, 136, 86, 1)",
+      "borderWidth": 2
+    },
+    {
+      "label": "Traditional",
+      "data": [73, 71, 85],
+      "backgroundColor": "rgba(180, 180, 180, 0.8)",
+      "borderColor": "rgba(200, 200, 200, 1)",
+      "borderWidth": 2
+    }
+  ]
+}
