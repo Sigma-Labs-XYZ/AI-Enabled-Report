@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "label": "AI Models",
+      "data": [
+        { "x": 175, "y": 92.3, "label": "GPT-4" },
+        { "x": 150, "y": 91.8, "label": "Claude 3 Opus" },
+        { "x": 200, "y": 93.1, "label": "Gemini Ultra" },
+        { "x": 70, "y": 78.5, "label": "Llama 2 70B" },
+        { "x": 56, "y": 81.2, "label": "Mixtral 8x7B" },
+        { "x": 6.6, "y": 85.4, "label": "Stable Diffusion XL" },
+        { "x": 12, "y": 89.7, "label": "DALL-E 3" },
+        { "x": 1.5, "y": 87.2, "label": "Whisper Large" },
+        { "x": 0.34, "y": 72.8, "label": "BERT Large" },
+        { "x": 0.06, "y": 68.3, "label": "ResNet-152" },
+        { "x": 0.043, "y": 82.1, "label": "YOLOv8" }
+      ],
+      "backgroundColor": [
+        "rgba(232, 136, 86, 0.8)",
+        "rgba(232, 136, 86, 0.8)",
+        "rgba(232, 136, 86, 0.8)",
+        "rgba(245, 158, 108, 0.8)",
+        "rgba(245, 158, 108, 0.8)",
+        "rgba(209, 117, 72, 0.8)",
+        "rgba(209, 117, 72, 0.8)",
+        "rgba(197, 100, 58, 0.8)",
+        "rgba(197, 100, 58, 0.8)",
+        "rgba(186, 89, 48, 0.8)",
+        "rgba(186, 89, 48, 0.8)"
+      ],
+      "borderColor": [
+        "#e88856",
+        "#e88856",
+        "#e88856",
+        "#f59e6c",
+        "#f59e6c",
+        "#d17548",
+        "#d17548",
+        "#c5643a",
+        "#c5643a",
+        "#ba5930",
+        "#ba5930"
+      ],
+      "borderWidth": 2,
+      "pointRadius": 8,
+      "pointHoverRadius": 12
+    }
+  ]
+}

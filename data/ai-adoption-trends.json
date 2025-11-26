@@ -1,0 +1,39 @@
+{
+  "labels": [
+    "2020-Q1", "2020-Q2", "2020-Q3", "2020-Q4",
+    "2021-Q1", "2021-Q2", "2021-Q3", "2021-Q4",
+    "2022-Q1", "2022-Q2", "2022-Q3", "2022-Q4",
+    "2023-Q1", "2023-Q2", "2023-Q3", "2023-Q4",
+    "2024-Q1", "2024-Q2", "2024-Q3", "2024-Q4",
+    "2025-Q1"
+  ],
+  "datasets": [
+    {
+      "label": "Enterprise",
+      "data": [23, 28, 31, 35, 42, 48, 54, 59, 64, 68, 72, 75, 78, 81, 84, 87, 89, 91, 93, 94, 95],
+      "borderColor": "#e88856",
+      "backgroundColor": "rgba(232, 136, 86, 0.15)",
+      "tension": 0.4,
+      "fill": true,
+      "borderWidth": 3
+    },
+    {
+      "label": "Small/Medium Business",
+      "data": [12, 15, 18, 22, 27, 32, 38, 43, 48, 53, 57, 61, 65, 69, 72, 75, 78, 81, 83, 85, 87],
+      "borderColor": "#f59e6c",
+      "backgroundColor": "rgba(245, 158, 108, 0.15)",
+      "tension": 0.4,
+      "fill": true,
+      "borderWidth": 3
+    },
+    {
+      "label": "Startups",
+      "data": [45, 52, 58, 63, 68, 72, 76, 79, 82, 84, 86, 88, 90, 91, 92, 94, 95, 96, 97, 97, 98],
+      "borderColor": "#d17548",
+      "backgroundColor": "rgba(209, 117, 72, 0.15)",
+      "tension": 0.4,
+      "fill": true,
+      "borderWidth": 3
+    }
+  ]
+}

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AI-Native Consultants Report 2025 - Interactive whitepaper with data visualizations"
+    />
+    <title>Sigma Labs: AI-Native Consultants Report</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
+    <link rel="apple-touch-icon" href="./assets/icon.png" />
+
+    <!-- Google Fonts - Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <!-- Fixed Navigation -->
+    <nav class="main-nav" id="main-nav">
+      <div class="nav-container">
+        <button
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#background" class="nav-link">Background</a></li>
+          <li><a href="#hypothesis" class="nav-link">Hypothesis</a></li>
+          <li><a href="#methodology" class="nav-link">Methodology</a></li>
+          <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
+          <li><a href="#reflections" class="nav-link">Reflections</a></li>
+          <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+        </ul>
+      </div>
+
+      <!-- Reading Progress Indicator -->
+      <div class="progress-indicator" id="progress-indicator"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">Sigma Labs: AI-Native Consultants</h1>
+        <p class="hero-subtitle">
+          Impact and Findings from Training LLM-Enabled Consultants
+        </p>
+      </div>
+      <div
+        class="scroll-indicator"
+        onclick="document.getElementById('introduction').scrollIntoView({ behavior: 'smooth' })"
+      >
+        ↓
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Introduction Section -->
+      <section id="introduction" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Introduction</h2>
+        </div>
+
+        <div class="section-content">
+          <p class="lead">
+            Between August and November 2025, Sigma Labs trained it's first
+            cohort of AI-native consultants. This report summarizes key findings
+            from our research into AI adoption, industry trends, performance
+            metrics, and the evolving technology ecosystem.
+          </p>
+
+          <p>
+            We defined "AI-Native Consultants" as professionals who have been
+            trained from the outset to leverage large language models (LLMs) and
+            related AI technologies as integral tools in their consulting
+            practice. This contrasts with traditional consultants who may adopt
+            AI tools later in their careers.
+          </p>
+
+          <p>
+            Our hypothesis was that AI-Native Consultants would demonstrate
+            superior performance in project delivery, problem-solving, and
+            client outcomes compared to their traditionally trained peers. We
+            actively worked against the risks of AI over-reliance by embedding
+            several techniques to ensure critical thinking and domain expertise
+            remained central to our training.
+          </p>
+
+          <div class="grid grid-2 mt-xl">
+            <div class="card">
+              <h3 class="card-title">Executive Summary</h3>
+              <div class="card-content">
+                <p>
+                  By leveraging the power of LLMs, our
+                  <b
+                    >AI-Native Course trainees demonstrated a XX% increase in
+                    project completion speed or complexity</b
+                  >, whilst maintaining the same level of quality of outcomes,
+                  and without a decrease in knowledge retention.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Methodology</h3>
+              <div class="card-content">
+                <p>
+                  We conducted an
+                  <b
+                    >AB testing style study over a 16-week period which involved
+                    20 trainees split into two groups of 10</b
+                  >. One group completed our Traditional Course, while the other
+                  completed our AI-Native Course.
+                </p>
+                <p>
+                  Both groups were assessed on project completion speed, quality
+                  of outcomes, and knowledge retention through standardized
+                  tests and project evaluations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="background" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Background</h2>
+        </div>
+
+        <div class="section-content">
+          <div class="summary-box">
+            <div class="summary-box-title">Key Points</div>
+            <ul>
+              <li>
+                GitHub Copilot (2021) marked the shift from autocomplete to true
+                AI pair-programming
+              </li>
+              <li>
+                76% of developers using or planning to use AI tools (Stack
+                Overflow 2024), up from 70% in 2023
+              </li>
+              <li>
+                Fast-moving startups report 80%+ of codebase written by AI; Big
+                Tech seeing revolutionary change
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            The release of GitHub Copilot in mid-2021 marked a watershed moment
+            for software development: for the first time, a large-scale model
+            trained on public repositories could sit alongside a developer in
+            their IDE and suggest entire functions, boilerplate, or even complex
+            algorithms in real time. Powered by OpenAI’s Codex, Copilot
+            demonstrated that AI could move beyond simple autocomplete and into
+            a true “pair-programming” paradigm. Early adopters praised its
+            ability to reduce repetitive coding tasks, speed up prototyping, and
+            introduce best-practice patterns.
+          </p>
+
+          <p>
+            In the years since, an ecosystem of AI co-pilot tools has emerged.
+            Cursor, Tabnine, Amazon CodeWhisperer, and enterprise LLM
+            integrations now vie for developers’ attention, each bringing its
+            own strengths - whether tighter on-prem security, better support for
+            specialised languages, or deeper integration with cloud pipelines.
+            Meanwhile, chat-based assistants like ChatGPT and Anthropic’s Claude
+            offer natural-language debugging, architectural guidance, and even
+            test-generation features. As these co-pilots learn from private
+            codebases and context, they’re shifting from generic suggestion
+            engines to customisable teammates that understand a team’s coding
+            conventions, security policies, and domain-specific libraries.
+          </p>
+
+          <p>
+            On the horizon, we see new ‘Agentic’ tools that promise the ability
+            to replace junior or mid-level technologists completely by
+            empowering the AI to complete multi-step actions encompassing the
+            full software development lifecycle. Development is progressing at
+            pace with tools such as Devin.ai , but a proven track record to
+            produce industry-standard code on large existing codebases is yet to
+            be seen.
+          </p>
+
+          <p>
+            The hypothesis that this document is predicated on is that AI tools
+            will continue to become more powerful and companies will realise
+            that without the performance gained from using it, they won’t be
+            able to keep up with the speed at which their competitors can ship
+            software.
+          </p>
+
+          <h4>Industry Research</h4>
+
+          <p>
+            Within start-ups (we’ve spoken to one tech lead, and one founder),
+            we’ve seen a much larger uptake, with one quoting that they believe
+            80%+ of their codebase has been written by AI. Most notably, this
+            quote shows the dramatic uptake that has been.
+          </p>
+
+          <blockquote>
+            “There is code that has been written, tested, deployed and will -
+            eventually - be removed without ever having had a human see it”
+          </blockquote>
+
+          <p>
+            This reinforces the sense from industry that the current suite of
+            tools is most useful for greenfield projects, with limited scope,
+            where moving fast is preferable to solving problems comprehensively.
+          </p>
+
+          <p>
+            This rapid uptake by very early-stage start-ups can be explained by
+            the forcing effect that limited resources have on small companies.
+            Poor quality code is unlikely to force them to close; not having a
+            product-market fit will.
+          </p>
+
+          <p>
+            More widely in the industry, the
+            <a
+              href="https://survey.stackoverflow.co/2024/ai#sentiment-and-usage-ai-sent"
+              target="_blank"
+              >Stack Overflow Developer Survey 2024 stated that</a
+            >
+          </p>
+
+          <blockquote>
+            76% of all respondents are using or are planning to use AI tools in
+            their development process this year, an increase from last year
+            (70%). Many more developers are currently using AI tools this year,
+            too (62% vs. 44%).
+          </blockquote>
+
+          <p>
+            In the world of Big Tech, adoption within teams building the tools
+            (i.e. the most obvious first adopters) is surprisingly high. Tim
+            Rogers (Product Owner at Github) shared their data on HackerNews
+          </p>
+
+          <blockquote>
+            So far, the agent has been used by about 400 GitHub employees in
+            more than 300 our our repositories, and we've merged almost 1,000
+            pull requests contributed by Copilot. [..] In the repo where we're
+            building the agent, the agent itself is actually the #5 contributor
+            - so we really are using Copilot coding agent to build Copilot
+            coding agent [...]
+          </blockquote>
+
+          <p>
+            To summarise, adoption is accelerating rapidly across all business
+          </p>
+
+          <ul class="styled-list mt-md">
+            <li>
+              Fast-moving start-ups have seen revolutionary change in their
+              processes
+            </li>
+            <li>Big tech at the bleeding edge has also seen the value</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- AI Adoption Trends Section -->
+      <section id="hypothesis" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Hypothesis</h2>
+        </div>
+
+        <div class="section-content">
+          <div class="summary-box">
+            <div class="summary-box-title">Key Points</div>
+            <ul>
+              <li>
+                AI shifts bottleneck from code writing to requirements gathering
+                and quality assurance (V-Bounce model)
+              </li>
+              <li>
+                AI-native technologists must excel at prompting, stakeholder
+                management, and quality assurance
+              </li>
+              <li>
+                Companies will hire junior technologists to work at new
+                bottleneck: requirements and testing
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            In the research paper titled
+            <a href="https://arxiv.org/pdf/2408.03416" target="_blank"
+              >'The AI-Native Software Development Lifecycle: A Theoretical and
+              Practical New Methodology'</a
+            >, the authors speak about a radical change in the places that take
+            up the most time when producing software. This relies on the
+            ‘V-Model’ of software development (see Figure 1 below), which tries
+            to describe the way software is built.
+          </p>
+
+          <p>
+            In this model, cheap, junior technologists are brought in to tackle
+            the largest bottleneck in this system (represented by the largest
+            box) - writing the code. This is not technically the hardest part of
+            the problem, and if the problem has been well defined and
+            structured, this should be achievable for juniors to complete with
+            support.
+          </p>
+
+          <p>
+            However, with the use of AI, this model would be transformed to look
+            more like this - the ‘V-Bounce’ model (see Figure 2 below). In this
+            new model, it is apparent that the bottleneck in this system is no
+            longer writing code - which is mostly automated - but rather in the
+            requirements gathering and testing phases of the project.
+            <b
+              >We hypothesise that one outcome of this is that companies will
+              now be hiring cheap, junior technologists to work at the new
+              bottleneck of production - requirements gathering and quality
+              assurance.</b
+            >
+          </p>
+
+          <div class="visualization-container chart-appear">
+            <div class="grid grid-2">
+              <div class="diagram-item">
+                <img
+                  src="./assets/v-model.png"
+                  alt="V-Model Diagram"
+                  class="diagram-image"
+                />
+                <p class="caption">Figure 1: V-Model of Software Development</p>
+              </div>
+              <div class="diagram-item">
+                <img
+                  src="./assets/v-bounce.png"
+                  alt="V-Bounce Diagram"
+                  class="diagram-image"
+                />
+                <p class="caption">
+                  Figure 2: V-Bounce Model of Software Development, post AI
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-content">
+          <p>
+            There are, of course, many other bottlenecks in a software project -
+            architecture, deployment and cross-team coordination - that aren’t
+            solely code-generation issues. But these will often fall outside a
+            junior engineer's remit, sitting with an Architect or Tech Leads to
+            work through. We hypothesise that this means that AI-native
+            technologists need to be:
+          </p>
+
+          <ol class="styled-list mt-md">
+            <li>
+              1. Using AI to generate code to solve problems to keep up
+              productivity
+            </li>
+            <li>
+              2. Skilled in working with stakeholders to ensure they are solving
+              the right problem
+            </li>
+            <li>
+              3. Extremely good quality assurance skills to ensure code quality
+            </li>
+          </ol>
+
+          <p>Expanded into learning objectives, these could be viewed as:</p>
+
+          <div class="grid grid-2 mt-xl">
+            <div class="card">
+              <h3 class="card-title-small">
+                1. Prompting and Generative Coding
+              </h3>
+              <div class="card-content-small">
+                <p>A technologist should be able to…</p>
+
+                <ol class="styled-list mt-md">
+                  <li>
+                    Write a concise prompt that specifies the programming
+                    language, input/output formats, and any edge-case
+                    requirements.
+                  </li>
+                  <li>
+                    Provide relevant context (existing code, data schemas,
+                    dependencies) so the AI generates code that fits the
+                    project.
+                  </li>
+                  <li>
+                    Compare multiple AI outputs, choose the best one, and refine
+                    the prompt to address missing features or bugs.
+                  </li>
+                  <li>
+                    Review every line of AI-generated code for correctness,
+                    performance, and security before merging.
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title-small">S2. Stakeholder Management</h3>
+              <div class="card-content-small">
+                <p>A technologist should be able to…</p>
+
+                <ol class="styled-list mt-md">
+                  <li>
+                    Schedule and lead a kickoff discussion to capture business
+                    goals, constraints, and success metrics.
+                  </li>
+                  <li>
+                    Turn stakeholder input into concise user stories, acceptance
+                    criteria, and manual decomposition before prompting AI.
+                  </li>
+                  <li>
+                    Provide regular, transparent updates on progress,
+                    highlighting both AI-generated work and manual changes.
+                  </li>
+                  <li>
+                    Document edge-cases, data-privacy needs, and potential AI
+                    hallucinations so risks are visible from day one.
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title-small">3. Quality Assurance</h3>
+              <div class="card-content-small">
+                <p>A technologist should be able to…</p>
+
+                <ol class="styled-list mt-md">
+                  <li>
+                    Define clear test scenarios (unit, integration, end-to-end)
+                    before asking AI to scaffold tests.
+                  </li>
+                  <li>
+                    Prompt AI tools to generate initial test cases, then refine
+                    or extend those tests to cover edge cases.
+                  </li>
+                  <li>
+                    Automate QA checks in CI/CD pipelines so every commit
+                    undergoes the same rigorous validation.
+                  </li>
+                  <li>
+                    Track and report test coverage, code quality metrics, and
+                    security findings to the team.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industry Analysis Section -->
+      <section id="methodology" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Methodology</h2>
+          <p class="section-subtitle">
+            Our approach to training AI-Native Consultants
+          </p>
+        </div>
+
+        <p class="lead">
+          With the skillset of a junior technologist shifting from code writing
+          to requirements gathering and quality assurance, our training
+          methodology needed to adapt accordingly. We developed a new AI-Native
+          training program that emphasised these skills while still ensuring
+          strong foundational coding abilities.
+        </p>
+
+        <p>
+          We understood that the core challenge with training AI-Native was that
+          of over-reliance on AI tools. If trainees simply used AI to generate
+          code for them, they would not develop the critical thinking and
+          problem-solving skills needed to be effective technologists. To
+          address this, we embedded several techniques into our training program
+          to ensure that trainees remained active participants in the
+          development process.
+        </p>
+
+        <details class="collapsible-section">
+          <summary>
+            <div>
+              <div class="collapsible-section-title">
+                1. End-to-End Project-Based Learning
+              </div>
+              <p class="collapsible-section-description">
+                Full project lifecycle training from requirements gathering to
+                production support
+              </p>
+            </div>
+          </summary>
+          <div class="collapsible-content">
+            <div class="summary-box">
+              <div class="summary-box-title">Key Points</div>
+              <ul>
+                <li>
+                  Trainees conduct requirement gathering and client check-ins
+                  throughout the project lifecycle
+                </li>
+                <li>
+                  Consultants design complete architecture solutions rather than
+                  being given pre-defined solutions
+                </li>
+                <li>
+                  All consultants work fully across the project, from
+                  requirements to production support
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              Currently, we provide trainees with a fully scoped-out case study
+              in which all requirements and discovery have already been
+              completed. Each cohort works through a sequence of well-defined
+              tasks - from data ingestion to transformation to basic front-end
+              display- chunked into step-by-step challenges. This model ensures
+              focus on coding and tool usage but omits the critical early phases
+              of stakeholder engagement, requirements gathering and solution
+              design. The reason we do this is that this is mostly where they'd
+              be spending their time as Junior Technologists - writing code.
+            </p>
+
+            <p>In this new 'End-to-End' style, trainees will also</p>
+
+            <ul class="styled-list mt-md">
+              <li>
+                * Conduct Requirement Gathering from clients directly.
+                ('Clients' are role played by Coaches)
+              </li>
+              <li>Run check-ins with clients to get feedback</li>
+              <li>
+                Design complete architecture solutions (where they would
+                previously have been given a solution)
+              </li>
+              <li>
+                Compare and contrast architecture solutions to decide on the
+                best solution
+              </li>
+              <li>
+                Ensure all requirements have been met during project sign-off
+                with a client
+              </li>
+            </ul>
+
+            <p>
+              What this means in practice is that
+              <b
+                >all Consultants can work fully across the project, from
+                requirements gathering through to supporting in production</b
+              >
+            </p>
+          </div>
+        </details>
+
+        <details class="collapsible-section">
+          <summary>
+            <div>
+              <div class="collapsible-section-title">
+                2. Prompt → Explain → Apply
+              </div>
+              <p class="collapsible-section-description">
+                Active learning loop ensuring deep understanding of AI-generated
+                code
+              </p>
+            </div>
+          </summary>
+          <div class="collapsible-content">
+            <div class="summary-box">
+              <div class="summary-box-title">Key Points</div>
+              <ul>
+                <li>
+                  Three-phase loop keeps trainees as active technologists rather
+                  than passive AI consumers
+                </li>
+                <li>
+                  Prevents over-reliance by ensuring understanding before
+                  applying AI-generated solutions
+                </li>
+                <li>
+                  Ensures consultants fully understand their code even when LLMs
+                  generate it
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              The current learning to code loop might look like
+              "Understand-Build-Test". First, the trainee has to understand the
+              problem, break it down into steps, break that down into actionable
+              pieces of code, build it, and then test what they've built.
+              Through this process, they will (hopefully) build a deep
+              understanding of the tools they're using by exploring the
+              capabilities of the tools. They will iterate through maybe wrong
+              or wrong-ish solutions before ultimately landing on one that
+              works, often through a process of trial and error.
+            </p>
+            <p>
+              The approach is less effective when the AI may generate an exact
+              solution for them first time. Unless we're careful, they will
+              never be exposed to all the bad solutions before they end up at
+              the good one - they'll just be given the good one.
+            </p>
+            <p>
+              The "Prompt → Explain → Apply" loop keeps trainees active
+              technologists rather than passive consumers of AI output by
+              enforcing three tight phases on every task
+            </p>
+
+            <p>
+              What this means in practice is that
+              <b
+                >all Consultants fully understand what they're doing, even when
+                LLMs are doing the work for them</b
+              >
+            </p>
+          </div>
+        </details>
+
+        <details class="collapsible-section">
+          <summary>
+            <div>
+              <div class="collapsible-section-title">
+                3. Project Defence & Presentations
+              </div>
+              <p class="collapsible-section-description">
+                Weekly presentations to demonstrate true understanding of
+                AI-assisted work
+              </p>
+            </div>
+          </summary>
+          <div class="collapsible-content">
+            <div class="summary-box">
+              <div class="summary-box-title">Key Points</div>
+              <ul>
+                <li>
+                  Weekly presentations and live Q&A guarantee comprehension -
+                  defenders must understand every line
+                </li>
+                <li>
+                  Reinforces critical reading by combining AI suggestions with
+                  human judgment and code review
+                </li>
+                <li>
+                  Cultivates accountability when AI misses something or trainees
+                  misunderstand their code
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              In an AI-Native world, having completed the task is no longer a
+              good judge of understanding. The AI may have done the work for
+              you, after all. Instead, we need to ensure that trainees can
+              demonstrate deep understanding of the work they've done through a
+              process of project defence and presentations.
+            </p>
+
+            <p>
+              At least once a week, every consultant is asked to present their
+              project and their code in front of a Senior Coach.
+            </p>
+
+            <p>The result of this is</p>
+
+            <ul class="styled-list mt-md">
+              <li>
+                Guarantees Comprehension: You can't fake your way through a live
+                Q&A - defenders must truly understand every line.
+              </li>
+              <li>
+                Reinforces Critical Reading: Critics learn to combine AI
+                suggestions with human judgement, practising both tool-use and
+                code review skills.
+              </li>
+              <li>
+                Cultivates Accountability: The whole team sees when AI misses
+                something or a trainee misunderstands their own code, driving
+                continuous improvement.
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="collapsible-section">
+          <summary>
+            <div>
+              <div class="collapsible-section-title">4. AI Best Practice</div>
+              <p class="collapsible-section-description">
+                Security, compliance, and data privacy guardrails for
+                AI-generated code
+              </p>
+            </div>
+          </summary>
+          <div class="collapsible-content">
+            <div class="summary-box">
+              <div class="summary-box-title">Key Points</div>
+              <ul>
+                <li>
+                  Secure-by-Design Coding: Threat modeling, vulnerability
+                  scanning, and AI pitfall checklists
+                </li>
+                <li>
+                  Licence & IP Compliance: Automated scanning to prevent
+                  restrictive licence violations
+                </li>
+                <li>
+                  Data Privacy & PII Protection: Policies and tools to prevent
+                  sensitive data leaks to public LLMs
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              An "AI Best Practice" module equips engineers with the principles,
+              patterns and automated guardrails needed to safely harness
+              generative code tools—specifically addressing the security,
+              licence/IP and data-privacy risks they introduce.
+            </p>
+
+            <ul class="styled-list mt-md">
+              <li>
+                <strong>Secure-by-Design Coding</strong>
+                <ul class="styled-list mt-xs">
+                  <li>
+                    Teach secure prompt patterns (e.g. default to input
+                    sanitisation) and threat-model AI outputs before merging.
+                  </li>
+                  <li>
+                    Lab: Use static-analysis and vulnerability scanners (Bandit,
+                    Semgrep) as CI gates on every AI-generated snippet.
+                  </li>
+                  <li>
+                    Provide a checklist of common AI pitfalls (open ports,
+                    disabled TLS checks, unsanitised file paths) and remediation
+                    snippets.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Licence &amp; IP Compliance</strong>
+                <ul class="styled-list mt-xs">
+                  <li>
+                    Explain the difference between permissive and copyleft
+                    licences and the dangers of accepting GPL-style code
+                    verbatim.
+                  </li>
+                  <li>
+                    Automate licence scanning in CI (FOSSA, SPDX checks) to flag
+                    any third-party snippets that carry restrictive terms.
+                  </li>
+                  <li>
+                    Supply templates for standard attribution headers and a
+                    "safe-prompt" library that avoids licence-bound examples.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Data Privacy &amp; PII Protection</strong>
+                <ul class="styled-list mt-xs">
+                  <li>
+                    Enforce policies against sending sensitive data or
+                    proprietary code to public LLMs.
+                  </li>
+                  <li>
+                    Demonstrate how to scrub or anonymise inputs (redacting
+                    names, IDs) and use enterprise-grade, on-prem or
+                    private-endpoint models.
+                  </li>
+                  <li>
+                    Lab: Simulate a GDPR breach by pasting PII into a public API
+                    and then apply scripts to detect &amp; remove leaks.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <p class="mt-md">
+              By combining hands-on exercises with automated CI-gated checks,
+              ready-made checklists and real-world examples, this module ensures
+              trainees can confidently generate, vet and deploy AI-assisted code
+              without exposing their organisation to security, legal or
+              compliance failures.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <!-- Performance Metrics Section -->
+      <section id="outcomes" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Outcomes</h2>
+          <p class="section-subtitle">
+            Impact and analysis of the AI-Native training program
+          </p>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-box-title">Key Points</div>
+          <ul>
+            <li>
+              AI-Native trainees demonstrated XX% increase in project completion
+              speed or complexity
+            </li>
+            <li>
+              Quality of outcomes maintained at same level as traditionally
+              trained consultants
+            </li>
+            <li>
+              Knowledge retention showed no decrease despite heavy AI tool usage
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- AI Ecosystem Section -->
+      <section id="reflections" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Reflections & Learnings</h2>
+          <p class="section-subtitle">Insights from our journey so far</p>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-box-title">Key Points</div>
+          <ul>
+            <li>
+              Key challenges faced during implementation and how they were
+              addressed
+            </li>
+            <li>
+              Unexpected benefits and limitations discovered in AI-Native
+              training approach
+            </li>
+            <li>
+              Lessons learned and recommendations for future cohorts and similar
+              programs
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Conclusion Section -->
+      <section id="conclusion" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Conclusion</h2>
+          <p class="section-subtitle">Key takeaways and future outlook</p>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-box-title">Key Points</div>
+          <ul>
+            <li>
+              AI-Native training demonstrates measurable benefits in speed and
+              efficiency without sacrificing quality
+            </li>
+            <li>
+              Success requires structured methodology preventing over-reliance
+              and maintaining critical thinking
+            </li>
+            <li>
+              Future of tech education must integrate AI tools from day one, not
+              as afterthought
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Sigma Labs. All rights reserved.</p>
+      <p class="mt-sm text-xs">Data visualizations powered by Chart.js</p>
+    </footer>
+
+    <!-- Global Tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

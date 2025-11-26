@@ -1,0 +1,178 @@
+/* ==========================================
+   TYPOGRAPHY - Text Styles & Hierarchy
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  margin-bottom: var(--space-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lead paragraph */
+.lead {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Small text */
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.text-coral {
+  color: var(--color-accent-primary);
+}
+
+.text-orange {
+  color: var(--color-accent-secondary);
+}
+
+/* Font weights */
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Monospace */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-bg-elevated);
+  padding: 0.2em 0.4em;
+  border-radius: var(--border-radius-sm);
+  color: var(--color-accent-green);
+}
+
+pre {
+  font-family: var(--font-mono);
+  background: var(--color-bg-elevated);
+  padding: var(--space-sm);
+  border-radius: var(--border-radius-md);
+  overflow-x: auto;
+  margin-bottom: var(--space-md);
+  border: var(--border-width-thin) solid var(--glass-border);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 3px solid var(--color-accent-primary);
+  padding-left: var(--space-md);
+  margin: var(--space-md) 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+/* Lists */
+.styled-list {
+  margin-left: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.styled-list li {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-secondary);
+  position: relative;
+  padding-left: var(--space-sm);
+}
+
+.styled-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-primary);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h3 {
+    font-size: var(--font-size-2xl);
+  }
+}

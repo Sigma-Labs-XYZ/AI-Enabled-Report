@@ -1,0 +1,247 @@
+/* ==========================================
+   THEME - Dark Professional Design System
+   Matching Sigma Labs aesthetic
+   ========================================== */
+
+:root {
+  /* ============ Color Palette ============ */
+  /* Backgrounds - Dark Theme (matching Sigma Labs) */
+  --color-bg-primary: #3a3a3a;
+  --color-bg-secondary: #4a4a4a;
+  --color-bg-elevated: #505050;
+  --color-bg-overlay: rgba(58, 58, 58, 0.98);
+
+  /* Accent Colors - Coral/Orange (matching Sigma Labs) */
+  --color-accent-primary: #e88856;       /* Coral orange */
+  --color-accent-secondary: #f59e6c;     /* Lighter coral */
+  --color-accent-tertiary: #d17548;      /* Darker coral */
+  --color-accent-dark: #c5643a;          /* Deep coral */
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.8);
+  --color-text-tertiary: rgba(255, 255, 255, 0.6);
+  --color-text-inverse: #3a3a3a;
+
+  /* Borders & Dividers */
+  --color-border-light: rgba(255, 255, 255, 0.1);
+  --color-border-medium: rgba(255, 255, 255, 0.15);
+  --color-border-dark: rgba(255, 255, 255, 0.25);
+
+  /* Gradients - Subtle Professional */
+  --gradient-primary: linear-gradient(135deg, #e88856 0%, #f59e6c 100%);
+  --gradient-secondary: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%);
+  --gradient-subtle: linear-gradient(180deg, #3a3a3a 0%, #4a4a4a 100%);
+
+  /* Card & Surface Effects */
+  --surface-bg: #4a4a4a;
+  --surface-bg-hover: #505050;
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --surface-shadow: rgba(0, 0, 0, 0.3);
+
+  /* ============ Typography ============ */
+  --font-primary: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
+  --font-mono: 'Raleway', 'SF Mono', 'Monaco', monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  --font-size-6xl: 3.75rem;   /* 60px */
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ============ Spacing System ============ */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 1rem;      /* 16px */
+  --space-md: 1.5rem;    /* 24px */
+  --space-lg: 2rem;      /* 32px */
+  --space-xl: 3rem;      /* 48px */
+  --space-2xl: 4rem;     /* 64px */
+  --space-3xl: 6rem;     /* 96px */
+  --space-4xl: 8rem;     /* 128px */
+
+  /* ============ Effects & Shadows ============ */
+  /* Professional Shadows for Dark Theme */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+
+  /* Accent Shadows */
+  --shadow-accent: 0 4px 12px rgba(232, 136, 86, 0.2);
+  --shadow-accent-lg: 0 8px 20px rgba(232, 136, 86, 0.3);
+
+  /* ============ Animation Timing ============ */
+  --transition-fast: 150ms ease-out;
+  --transition-medium: 300ms ease-out;
+  --transition-slow: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ============ Borders & Radii ============ */
+  --border-radius-sm: 0.25rem;   /* 4px */
+  --border-radius-md: 0.5rem;    /* 8px */
+  --border-radius-lg: 0.75rem;   /* 12px */
+  --border-radius-xl: 1rem;      /* 16px */
+  --border-radius-full: 9999px;
+
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 3px;
+
+  /* ============ Z-Index System ============ */
+  --z-index-base: 0;
+  --z-index-dropdown: 10;
+  --z-index-sticky: 20;
+  --z-index-fixed: 30;
+  --z-index-modal-backdrop: 40;
+  --z-index-modal: 50;
+  --z-index-popover: 60;
+  --z-index-tooltip: 70;
+
+  /* ============ Breakpoints ============ */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1440px;
+
+  /* ============ Container Widths ============ */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+/* ==========================================
+   Dark Theme Base Styles
+   ========================================== */
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Professional card styling */
+.card {
+  background: var(--surface-bg);
+  border: var(--border-width-thin) solid var(--surface-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-medium);
+}
+
+/* Accent color utilities */
+.text-accent {
+  color: var(--color-accent-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-inverse);
+}
+
+.border-accent {
+  border-color: var(--color-accent-primary);
+}
+
+/* Professional button styling */
+.btn-primary {
+  background: var(--color-accent-primary);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+  box-shadow: var(--shadow-accent);
+}
+
+/* Subtle gradient background */
+.bg-gradient {
+  background: var(--gradient-subtle);
+}
+
+/* Professional elevation */
+.elevated {
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-md);
+  border: var(--border-width-thin) solid var(--surface-border);
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-medium);
+  border-radius: var(--border-radius-full);
+  border: 2px solid var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-dark);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--color-accent-primary);
+  color: var(--color-text-inverse);
+}
+
+::-moz-selection {
+  background: var(--color-accent-primary);
+  color: var(--color-text-inverse);
+}
+
+/* Focus ring - coral orange */
+:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Divider */
+.divider {
+  border-top: var(--border-width-thin) solid var(--color-border-light);
+}
+
+/* Subtle hover effects */
+.hover-lift {
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}

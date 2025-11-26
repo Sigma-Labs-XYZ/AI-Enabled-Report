@@ -1,0 +1,19 @@
+{
+  "labels": ["Healthcare", "Finance", "Retail", "Manufacturing", "Education", "Legal"],
+  "datasets": [
+    {
+      "label": "Current Implementation",
+      "data": [75, 82, 64, 71, 58, 73],
+      "backgroundColor": "rgba(232, 136, 86, 0.8)",
+      "borderColor": "#e88856",
+      "borderWidth": 2
+    },
+    {
+      "label": "Projected 2026",
+      "data": [89, 93, 78, 85, 72, 87],
+      "backgroundColor": "rgba(245, 158, 108, 0.8)",
+      "borderColor": "#f59e6c",
+      "borderWidth": 2
+    }
+  ]
+}
