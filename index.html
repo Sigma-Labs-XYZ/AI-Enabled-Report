@@ -433,112 +433,111 @@
         <div class="section-content">
           <p>
             There are, of course, many other bottlenecks in a software project -
-            architecture, deployment and cross-team coordination - that aren’t
+            architecture, deployment and cross-team coordination - that aren't
             solely code-generation issues. But these will often fall outside a
             junior engineer's remit, sitting with an Architect or Tech Leads to
-            work through. We hypothesise that this means that AI-native
-            technologists need to be:
+            work through.
           </p>
 
-          <ol class="styled-list mt-md">
-            <li>
-              1. Using AI to generate code to solve problems to keep up
-              productivity
-            </li>
-            <li>
-              2. Skilled in working with stakeholders to ensure they are solving
-              the right problem
-            </li>
-            <li>
-              3. Extremely good quality assurance skills to ensure code quality
-            </li>
-          </ol>
+          <p>
+            Our hypothesis is that junior technologist will now need to be
+            highly skilled in these three areas to be effective in this new
+            world:
+          </p>
 
-          <p>Expanded into learning objectives, these could be viewed as:</p>
-
-          <div class="grid grid-2 mt-xl">
-            <div class="card">
-              <h3 class="card-title-small">
-                1. Prompting and Generative Coding
-              </h3>
-              <div class="card-content-small">
-                <p>A technologist should be able to…</p>
-
-                <ol class="styled-list mt-md">
-                  <li>
-                    Write a concise prompt that specifies the programming
-                    language, input/output formats, and any edge-case
-                    requirements.
-                  </li>
-                  <li>
-                    Provide relevant context (existing code, data schemas,
-                    dependencies) so the AI generates code that fits the
-                    project.
-                  </li>
-                  <li>
-                    Compare multiple AI outputs, choose the best one, and refine
-                    the prompt to address missing features or bugs.
-                  </li>
-                  <li>
-                    Review every line of AI-generated code for correctness,
-                    performance, and security before merging.
-                  </li>
-                </ol>
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <p class="collapsible-section-description">
+                  1. Using AI to generate code to solve problems and maintain
+                  productivity
+                </p>
               </div>
+            </summary>
+            <div class="collapsible-content">
+              <ul class="styled-list mt-md">
+                <li>
+                  Write a concise prompt that specifies the programming
+                  language, input/output formats, and any edge-case
+                  requirements.
+                </li>
+                <li>
+                  Provide relevant context (existing code, data schemas,
+                  dependencies) so the AI generates code that fits the project.
+                </li>
+                <li>
+                  Compare multiple AI outputs, choose the best one, and refine
+                  the prompt to address missing features or bugs.
+                </li>
+                <li>
+                  Review every line of AI-generated code for correctness,
+                  performance, and security before merging.
+                </li>
+              </ul>
             </div>
+          </details>
 
-            <div class="card">
-              <h3 class="card-title-small">S2. Stakeholder Management</h3>
-              <div class="card-content-small">
-                <p>A technologist should be able to…</p>
-
-                <ol class="styled-list mt-md">
-                  <li>
-                    Schedule and lead a kickoff discussion to capture business
-                    goals, constraints, and success metrics.
-                  </li>
-                  <li>
-                    Turn stakeholder input into concise user stories, acceptance
-                    criteria, and manual decomposition before prompting AI.
-                  </li>
-                  <li>
-                    Provide regular, transparent updates on progress,
-                    highlighting both AI-generated work and manual changes.
-                  </li>
-                  <li>
-                    Document edge-cases, data-privacy needs, and potential AI
-                    hallucinations so risks are visible from day one.
-                  </li>
-                </ol>
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <p class="collapsible-section-description">
+                  2. Working with stakeholders to ensure they're solving the
+                  right problem
+                </p>
               </div>
+            </summary>
+            <div class="collapsible-content">
+              <ul class="styled-list mt-md">
+                <li>
+                  Schedule and lead a kickoff discussion to capture business
+                  goals, constraints, and success metrics.
+                </li>
+                <li>
+                  Turn stakeholder input into concise user stories, acceptance
+                  criteria, and manual decomposition before prompting AI.
+                </li>
+                <li>
+                  Provide regular, transparent updates on progress, highlighting
+                  both AI-generated work and manual changes.
+                </li>
+                <li>
+                  Document edge-cases, data-privacy needs, and potential AI
+                  hallucinations so risks are visible from day one.
+                </li>
+              </ul>
             </div>
+          </details>
 
-            <div class="card">
-              <h3 class="card-title-small">3. Quality Assurance</h3>
-              <div class="card-content-small">
-                <p>A technologist should be able to…</p>
-
-                <ol class="styled-list mt-md">
-                  <li>
-                    Define clear test scenarios (unit, integration, end-to-end)
-                    before asking AI to scaffold tests.
-                  </li>
-                  <li>
-                    Prompt AI tools to generate initial test cases, then refine
-                    or extend those tests to cover edge cases.
-                  </li>
-                  <li>
-                    Automate QA checks in CI/CD pipelines so every commit
-                    undergoes the same rigorous validation.
-                  </li>
-                  <li>
-                    Track and report test coverage, code quality metrics, and
-                    security findings to the team.
-                  </li>
-                </ol>
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <p class="collapsible-section-description">
+                  3. Ensuring code quality through comprehensive testing and
+                  validation
+                </p>
               </div>
+            </summary>
+            <div class="collapsible-content">
+              <ul class="styled-list mt-md">
+                <li>
+                  Define clear test scenarios (unit, integration, end-to-end)
+                  before asking AI to scaffold tests.
+                </li>
+                <li>
+                  Prompt AI tools to generate initial test cases, then refine or
+                  extend those tests to cover edge cases.
+                </li>
+                <li>
+                  Automate QA checks in CI/CD pipelines so every commit
+                  undergoes the same rigorous validation.
+                </li>
+                <li>
+                  Track and report test coverage, code quality metrics, and
+                  security findings to the team.
+                </li>
+              </ul>
             </div>
-          </div>
+          </details>
         </div>
       </section>
 
@@ -848,9 +847,9 @@
           <p>
             To evaluate the effectiveness of our AI-Native training approach, we
             conducted a series of standardized interview assessments comparing
-            AI-Enabled consultants against those trained using traditional methods.
-            The results demonstrate consistently higher performance across all
-            interview formats.
+            AI-Enabled consultants against those trained using traditional
+            methods. The results demonstrate consistently higher performance
+            across all interview formats.
           </p>
 
           <div class="visualization-container chart-appear">
