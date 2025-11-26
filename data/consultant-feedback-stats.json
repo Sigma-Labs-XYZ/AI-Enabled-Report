@@ -1,0 +1,64 @@
+{
+  "overview": {
+    "totalResponses": 8,
+    "averageHappiness": 8.1,
+    "averageProductivityGain": 33,
+    "averageLearningEffect": 21
+  },
+  "happinessDistribution": {
+    "ratings": [6, 8, 8, 8, 8, 9, 9, 9],
+    "veryHappy": 3,
+    "happy": 4,
+    "neutral": 1
+  },
+  "productivityEffects": [
+    {"range": "0-20%", "count": 1},
+    {"range": "21-40%", "count": 4},
+    {"range": "41-60%", "count": 3}
+  ],
+  "learningEffects": [
+    {"range": "Negative", "count": 1},
+    {"range": "0-20%", "count": 3},
+    {"range": "21-50%", "count": 1},
+    {"range": "51-70%", "count": 3}
+  ],
+  "keyThemes": {
+    "positives": [
+      "Immediate explanations and debugging help",
+      "Exposure to diverse AI tools (Claude, Copilot)",
+      "Deeper understanding from code defences",
+      "Faster mastery of new technologies",
+      "Professional-level AI tool usage",
+      "Effective as a learning tool"
+    ],
+    "concerns": [
+      "Code defence timing and structure",
+      "Over-reliance on agentic AI",
+      "Difficulty gauging understanding",
+      "Sparse feedback after switching to AI course",
+      "Need for more frequent assessments"
+    ]
+  },
+  "quotes": [
+    {
+      "text": "I liked the fact that I was able to use advanced AI's in a professional setting and really scale up the level and quality of my work",
+      "category": "productivity"
+    },
+    {
+      "text": "I liked most the deeper understanding gained from code defence, I feel this took me beyond simply doing to understanding AWS more deeply which is so valuable in industry",
+      "category": "learning"
+    },
+    {
+      "text": "Significantly speeds up gaining familiarity and general mastery over new technology tools, more efficient than reviewing over docs and simplifies learning through summary",
+      "category": "efficiency"
+    },
+    {
+      "text": "Using AI as a learning tool has been very effective for me in terms of learning",
+      "category": "learning"
+    },
+    {
+      "text": "I liked that I could get immediate explanations about topics and help with debugging, meaning I worked quicker",
+      "category": "productivity"
+    }
+  ]
+}
