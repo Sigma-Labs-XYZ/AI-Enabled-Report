@@ -1,0 +1,22 @@
+{
+  "labels": [
+    "Traditional",
+    "AI"
+  ],
+  "datasets": [
+    {
+      "label": "Group 1",
+      "data": [1943, 7230],
+      "backgroundColor": ["rgba(180, 180, 180, 0.8)", "rgba(232, 136, 86, 0.8)"],
+      "borderColor": ["rgba(200, 200, 200, 1)", "rgba(232, 136, 86, 1)"],
+      "borderWidth": 2
+    },
+    {
+      "label": "Group 2",
+      "data": [1525, 9876],
+      "backgroundColor": ["rgba(180, 180, 180, 0.8)", "rgba(232, 136, 86, 0.8)"],
+      "borderColor": ["rgba(200, 200, 200, 1)", "rgba(232, 136, 86, 1)"],
+      "borderWidth": 2
+    }
+  ]
+}
