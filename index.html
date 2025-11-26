@@ -44,6 +44,7 @@
           <li><a href="#introduction" class="nav-link">Introduction</a></li>
           <li><a href="#background" class="nav-link">Background</a></li>
           <li><a href="#hypothesis" class="nav-link">Hypothesis</a></li>
+          <li><a href="#risks" class="nav-link">Risks</a></li>
           <li><a href="#methodology" class="nav-link">Methodology</a></li>
           <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
           <li>
@@ -544,6 +545,180 @@
                 <li>
                   Track and report test coverage, code quality metrics, and
                   security findings to the team.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Risks Section -->
+      <section id="risks" class="content-section observe-fade">
+        <div class="section-header">
+          <h2 class="section-title">Risks</h2>
+        </div>
+
+        <div class="section-content">
+          <div class="summary-box">
+            <div class="summary-box-title">Key Points</div>
+            <ul>
+              <li>
+                There are significant risks to both consultants and clients, if AI is over-relied upon
+              </li>
+              <li>
+                Mitigation requires rigorous training, automated guardrails, and strict security practices
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            In this section, we highlight the risks if AI-Native Technologists were to outsource the majority of the writing of their code to an AI Copilot. These risks are split into:
+          </p>
+
+          <ul class="styled-list mt-md">
+            <li><strong>Consultant Risk:</strong> Short or long-term performance risk to our Consultants</li>
+            <li><strong>Client Risk:</strong> Security, financial or reputational risk to our Clients</li>
+          </ul>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">
+                  Consultant Risk: Skill Atrophy
+                </div>
+                <p class="collapsible-section-description">
+                  Over-reliance on AI erodes fundamental coding skills and problem-solving abilities
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p>
+                Relying too heavily on AI for code generation can erode a developer's fundamental skills, like breaking problems down, writing algorithms by hand and debugging complex issues.
+              </p>
+
+              <p>
+                Over time, they may lose confidence in solving novel challenges without an AI crutch and fail to build the deep understanding needed for robust, maintainable software. This "skill atrophy" may undermine their long-term growth and adaptability as technologists.
+              </p>
+
+              <p class="mt-md"><strong>Sources:</strong></p>
+              <ul class="styled-list">
+                <li>
+                  <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-study-finds-relying-on-ai-kills-your-critical-thinking-skills" target="_blank">
+                    Microsoft Study Finds Relying on AI Kills Your Critical Thinking Skills
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">
+                  Consultant Risk: Failure to Attain Mastery of Tools
+                </div>
+                <p class="collapsible-section-description">
+                  Superficial knowledge prevents deep understanding and troubleshooting ability
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p>
+                Failure to attain true mastery of AI tools means trainees may develop only a "veneer of knowledge" - the illusion of skill without the deep understanding that comes from hours of trial, error, and deliberate practice. Without wrestling through tedious, hands-on challenges, they risk knowing which buttons to click but not why or how the underlying systems work.
+              </p>
+
+              <p>
+                This superficial familiarity leaves them unable to diagnose failures, optimise workflows, or innovate when AI suggestions fall short. It is almost certain that with the current state of AI tools, the AI will assist in 90% of the task, but the final, hard 10% will still require a technologist's direct involvement in the code.
+              </p>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">
+                  Consultant Risk: Code Comprehension & Critical Review
+                </div>
+                <p class="collapsible-section-description">
+                  Reduced ability to understand, assess, and improve AI-generated code
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p>
+                Code comprehension and critical review refer to the ability to deeply understand, assess, and improve any code, even when it is generated by AI. Without having to write all of the code themselves, trainees may not truly understand what each part does or why it was written in a particular way.
+              </p>
+
+              <p>
+                They might also take the AI's word on what high-quality code is without building the skills to judge this for themselves. This can lead to hidden bugs, design flaws, and missed learning opportunities, as technologists fail to question, critique, or improve the AI's suggestions, ultimately weakening both individual confidence and team code quality.
+              </p>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">
+                  Client Risk: Security Implications & Business Risk
+                </div>
+                <p class="collapsible-section-description">
+                  AI-generated vulnerabilities expose organisations to breaches and compliance failures
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p>
+                AI-generated code can unknowingly introduce security vulnerabilities, such as un-sanitised inputs, weak authentication, or misconfigured permissions, that the model itself cannot detect. If these flaws reach production, they leave organisations exposed to data breaches, service outages, and regulatory non-compliance. The resulting incidents damage reputation, erode customer trust, and can incur significant financial penalties.
+              </p>
+
+              <p>
+                Without rigorous security reviews and automated vulnerability scanning of every AI-suggested snippet, businesses risk embedding dangerous weaknesses into their systems. For example:
+              </p>
+
+              <ul class="styled-list mt-md">
+                <li>
+                  <strong>Generating infrastructure scripts that open network ports broadly or disable firewalls by default</strong> – exposes internal services to the internet, allowing attackers to probe and breach systems.
+                </li>
+                <li>
+                  <strong>Disabling TLS certificate validation in HTTP clients</strong> – leaves data in transit open to interception or tampering, enabling undetected man-in-the-middle attacks.
+                </li>
+                <li>
+                  <strong>Failing to sanitise user-supplied file paths</strong> – permits directory traversal or arbitrary file reads, risking exposure of sensitive files and potential remote code execution.
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">
+                  Client Risk: License & IP, or Data Exposure
+                </div>
+                <p class="collapsible-section-description">
+                  Restrictive licenses and PII leakage create legal and compliance risks
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p>
+                Generative models trained on billions of lines of public code can inadvertently reproduce snippets governed by restrictive licences or reveal patterns that mirror proprietary implementations. Trainees who accept AI-generated code verbatim risk tainting their organisation's codebase with third-party licence obligations or exposing internal logic and secrets to external systems.
+              </p>
+
+              <p>
+                Additionally, most AI systems require users to send entire code blocks to them in order to be expanded upon. If a technologist was to - meaningfully or otherwise - send Personally Identifiable Information (PII) to a provider of AI it could break EU/US law (e.g. GDPR).
+              </p>
+
+              <p class="mt-md"><strong>Examples:</strong></p>
+              <ul class="styled-list">
+                <li>
+                  Embedding a block of AI-generated code under the GPL into a closed-source microservice—thereby forcing the entire service to adopt a copyleft licence.
+                </li>
+                <li>
+                  Incorporating an MIT-licensed helper function without attribution or a license header, creating confusion over permitted reuse.
+                </li>
+                <li>
+                  Pasting a snippet containing a customer's full name, date of birth and transaction history into ChatGPT to clarify a formatting error, thereby transmitting sensitive PII to the OpenAI service without the user's consent or organisational approval.
                 </li>
               </ul>
             </div>
