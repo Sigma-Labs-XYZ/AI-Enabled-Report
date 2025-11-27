@@ -1006,6 +1006,142 @@
             </p>
           </div>
         </details>
+
+        <div class="section-content">
+          <h4>Tools & Technology Selection</h4>
+
+          <p>
+            Throughout our AI-Native training programme, we conducted extensive experimentation across multiple categories of AI tools to identify the optimal technology stack for our consultants. Our evaluation focused on real-world performance, learning curve, and suitability for professional consulting environments.
+          </p>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">Chat-Based AI Assistants</div>
+                <p class="collapsible-section-description">
+                  ChatGPT, Gemini, and Claude compared for technical problem-solving
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p><strong>We considered:</strong>
+                <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>,
+                <a href="https://gemini.google.com/" target="_blank">Gemini</a>,
+                <a href="https://claude.ai/" target="_blank">Claude</a>
+              </p>
+
+              <p class="mt-md">
+                <strong>We chose: <a href="https://claude.ai/" target="_blank">Claude</a></strong> - Demonstrated the best ability when working with code, provided more structured and actionable responses, and excelled at explaining trade-offs in architectural decisions. Particularly effective when working in Learning Mode.
+              </p>
+
+              <p class="mt-md">
+                ChatGPT offered strong general-purpose capabilities, and was preferable for inter-personal interactions around AI. Gemini provided good integration with the Google ecosystem but showed inconsistent performance on complex technical queries and architectural guidance, however we brought this in later in the programme and experimented with it less.
+              </p>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">Generative Coding Tools</div>
+                <p class="collapsible-section-description">
+                  GitHub Copilot and Cursor evaluated for in-IDE assistance
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p><strong>We considered:</strong>
+                <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a>,
+                <a href="https://cursor.sh/" target="_blank">Cursor</a>
+              </p>
+
+              <p class="mt-md">
+                <strong>We chose: <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></strong> - Offered the most seamless IDE integration, particularly with VS Code. Excellent context awareness and reliable completions across python. It seemed to respond well to the `copilot-instructions.md` file and we could prompt it when when using auto-complete.
+              </p>
+
+              <p class="mt-md">
+                Cursor provided innovative features and powerful multi-file editing capabilities, but had a steeper learning curve, higher barrier to entry and didn't integrate as well with the rest of our stack.
+              </p>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">Agentic AI Development Tools</div>
+                <p class="collapsible-section-description">
+                  Claude Code, Copilot Workspace, and Codex for autonomous development
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p><strong>We considered:</strong>
+                <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot (Workspace)</a>,
+                <a href="https://openai.com/index/openai-codex/" target="_blank">OpenAI Codex</a>,
+                <a href="https://claude.ai/code" target="_blank">Claude Code</a>
+              </p>
+
+              <p class="mt-md">
+                <strong>We chose: <a href="https://claude.ai/code" target="_blank">Claude Code</a></strong> - Significantly outperformed alternatives with exceptional ability to:
+              </p>
+
+              <ul class="styled-list mt-xs">
+                <li>Understand complex project requirements and break them into actionable steps</li>
+                <li>Navigate large codebases and maintain context across multiple files</li>
+                <li>Execute full development lifecycles including implementation, testing, and debugging</li>
+                <li>Provide clear explanations of its reasoning and approach</li>
+                <li>Handle edge cases and error scenarios with minimal intervention</li>
+              </ul>
+
+              <p class="mt-md">
+                GitHub Copilot (Workspace) offered extended capabilities beyond code completion, but with limited autonomous action and still requiring significant developer guidance for complex tasks. OpenAI Codex provided powerful code generation from natural language, but was less integrated into full development workflows with limited ability to handle multi-step, context-dependent tasks.
+              </p>
+
+              <p class="mt-md">
+                The combination of Claude Code for agentic development tasks with GitHub Copilot for in-editor assistance proved highly effective. Claude Code's superior reasoning and multi-step execution capabilities made it indispensable for complex project work, whilst Copilot provided reliable day-to-day coding assistance.
+              </p>
+            </div>
+          </details>
+
+          <details class="collapsible-section">
+            <summary>
+              <div>
+                <div class="collapsible-section-title">Security & Code Quality Tools</div>
+                <p class="collapsible-section-description">
+                  Snyk for vulnerability scanning and licence compliance
+                </p>
+              </div>
+            </summary>
+            <div class="collapsible-content">
+              <p><strong>We considered:</strong>
+                <a href="https://snyk.io/" target="_blank">Snyk</a>,
+                <a href="https://www.sonarsource.com/products/sonarqube/" target="_blank">SonarQube</a>,
+                <a href="https://checkmarx.com/" target="_blank">Checkmarx</a>,
+                <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot in Pull Requests</a>
+              </p>
+
+              <p class="mt-md">
+                <strong>We chose: <a href="https://snyk.io/" target="_blank">Snyk</a></strong> - Deployed for comprehensive security analysis of AI-generated code. Provides:
+              </p>
+
+              <ul class="styled-list mt-xs">
+                <li>Real-time vulnerability scanning for dependencies and code</li>
+                <li>Licence compliance checking to prevent IP violations</li>
+                <li>Integration with CI/CD pipelines for automated security gates</li>
+                <li>Clear remediation guidance for identified vulnerabilities</li>
+              </ul>
+
+              <p class="mt-md">
+                Additionally, we used <strong>GitHub Copilot in Pull Requests</strong> to provide AI-assisted code review suggestions, helping to catch potential issues and improve code quality during the review process.
+              </p>
+
+              <p class="mt-md">
+                This combination of tools created a robust, secure, and highly productive development environment. By carefully selecting best-in-class tools for each category, we enabled our AI-Native consultants to work at significantly higher velocity whilst maintaining code quality and security standards.
+              </p>
+            </div>
+          </details>
+        </div>
+
       </section>
 
       <!-- Performance Metrics Section -->
